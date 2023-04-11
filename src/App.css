@@ -3,3 +3,14 @@
     justify-content: left;
     flex-direction: row;
 }
+
+.detail-div {
+    display: flex;
+    position: fixed;
+    top: 4rem;
+    justify-content: center;
+    left: 35rem;
+    height: 38rem;
+    align-items: center;
+    width: 40rem;
+} 

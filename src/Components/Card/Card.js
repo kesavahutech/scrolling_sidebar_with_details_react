@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import './Card.css';
+import DetailContext from "../../context/details-context";
 
 export default function Card(props) {
-    const clickHandler = (props) => {
-
+  const detailctx = useContext(DetailContext);
+    const clickHandler = () => {
+      detailctx.updateShowDetail(true);
+      detailctx.updateDetailData({
+        image : `${props.image}`
+      });
     }
   return (
     <div className="card" onClick={clickHandler}>

@@ -11,7 +11,9 @@ function App() {
     <Layout>
       <div className='body'>
         <CardList />
+        <div className='detail-div'>
         {detailctx.showDetail && <Details />}
+        </div>
       </div>
     </Layout>
   );

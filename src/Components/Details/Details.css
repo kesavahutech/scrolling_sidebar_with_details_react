@@ -1,4 +1,4 @@
-.card {
+.detail-card {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -6,15 +6,12 @@
     margin-top: 1rem;
     user-select: none;
     cursor: pointer;
+
 }
 
-.card:hover{
-    border: 2px dotted  rgb(136, 119, 151);
-}
-
-.image-container{
-    height: 500px;
-    width: 100%;
+.detail-image-container{
+    height: 35rem;
+    width: 40rem;
     overflow: hidden;
 }
 
@@ -27,7 +24,7 @@
     filter: brightness(100%);
 }
 
-.details {
+.detail-details {
     display: flex;
     margin: 8px;
     align-items: center;
