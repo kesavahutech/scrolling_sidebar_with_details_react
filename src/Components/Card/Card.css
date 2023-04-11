@@ -1,0 +1,35 @@
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid  blueviolet;
+    margin-top: 1rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.card:hover{
+    border: 2px dotted  rgb(136, 119, 151);
+}
+
+.image-container{
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.image{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    padding:0px;
+    margin:0px;
+    filter: brightness(100%);
+}
+
+.details {
+    display: flex;
+    margin: 8px;
+    align-items: center;
+    justify-content: left;
+}

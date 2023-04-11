@@ -1,0 +1,12 @@
+.header-top {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: brown;
+    height: 3rem;
+}
+
+.header-top span {
+    font-size:xx-large;
+    margin-left: 8rem;
+}
