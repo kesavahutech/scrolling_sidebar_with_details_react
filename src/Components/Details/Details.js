@@ -1,23 +1,22 @@
-import React, { useContext } from 'react';
-import DetailContext from '../../context/details-context';
+import React from 'react';
 
-import './Details.css';
+import classes from "./Details.module.css";
 
-export default function Details() {
-  const detailctx = useContext(DetailContext);
+export default function Details(props) {
+  const {name, img, desc} = props.detail
   return (
-    <div className="detail-card">
-      <div class="detail-title">
+    <div className={classes.detail_card}>
+      <div className={classes.detail_title}>
         <span>
-          {detailctx.detaildata.name}
+          {name}
         </span>
       </div>
-      <div className="detail-image-container">
-        <img className="image" src={require(`../../Images/${detailctx.detaildata.image}`)} alt="" />
+      <div className={classes.detail_image_container}>
+        <img className={classes.image} src={require(`../../Images/${img}`)} alt="" />
       </div>
-      <div class="detail-details">
+      <div className={classes.detail_details}>
         <span>
-          {detailctx.detaildata.desc}
+          {desc}
         </span>
       </div>
     </div>

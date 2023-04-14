@@ -1,24 +1,19 @@
-.card {
-    display: flex;
+.detail_card {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     border: 2px solid  rgb(76, 126, 126);
-    background-color: rgb(212, 237, 229);
     margin-top: 1rem;
     user-select: none;
     cursor: pointer;
-    border-radius: 5px;
-    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(212, 237, 229);
 }
 
-.card:hover{
-    border: 2px dotted  rgb(136, 119, 151);
-}
-
-.image-container{
-    height: 500px;
-    width: 100%;
+.detail_image_container{
+    height: 30rem;
+    width: 40rem;
     overflow: hidden;
 }
 
@@ -31,9 +26,17 @@
     filter: brightness(100%);
 }
 
-.details {
+.detail_details {
+    display: flex;
+    margin: 8px;
+    align-items: center;
+    justify-content: left;
+}
+
+.detail_title {
     display: flex;
     margin: 8px;
     align-items: center;
     justify-content: center;
+    font-weight: bolder;
 }

@@ -1,21 +1,23 @@
-import { useContext } from 'react';
-import './App.css';
-import CardList from './Components/CardList/CardList';
-import Details from './Components/Details/Details';
-import Layout from './Components/Layout/Layout';
-import DetailContext from './context/details-context';
+import { useState } from "react";
+import "./App.css";
+import CardList from "./Components/CardList/CardList";
+import Details from "./Components/Details/Details";
 
 function App() {
-  const detailctx = useContext(DetailContext);
+  const [detail, setDetail] = useState(null);
+  const clickHandler = (detail) => {
+    setDetail(detail);
+  }
   return (
-    <Layout>
-      <div className='body'>
-        <CardList />
-        <div className='detail-div'>
-        {detailctx.showDetail && <Details />}
-        </div>
+    <>
+      <header className="header-top">
+        <span>Food Items</span>
+      </header>
+      <div className="body">
+        <CardList clickHandler={clickHandler} />
+        <div className="detail-div">{detail && <Details detail={detail}/>}</div>
       </div>
-    </Layout>
+    </>
   );
 }
 

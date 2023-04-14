@@ -14,3 +14,17 @@
     align-items: center;
     width: 40rem;
 } 
+
+.header-top {
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    background-color: red;
+    height: 3rem;
+}
+
+.header-top span {
+    font-size:xx-large;
+    margin-left: 8rem;
+}

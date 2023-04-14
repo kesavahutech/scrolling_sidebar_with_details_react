@@ -3,14 +3,11 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { DetailContextProvider } from "./context/details-context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <DetailContextProvider>
       <App />
-    </DetailContextProvider>
   </React.StrictMode>
 );
 
