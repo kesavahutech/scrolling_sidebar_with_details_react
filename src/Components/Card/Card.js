@@ -8,7 +8,9 @@ export default function Card(props) {
     const clickHandler = () => {
       detailctx.updateShowDetail(true);
       detailctx.updateDetailData({
-        image : `${props.image}`
+        name : props.name,
+        image : `${props.image}`,
+        desc : props.desc
       });
     }
   return (
@@ -16,9 +18,9 @@ export default function Card(props) {
       <div className="image-container">
         <img className="image" src={require(`../../Images/${props.image}`)} alt="" />
       </div>
-      <div class="details">
+      <div className="details">
         <span>
-          this is a food image
+          {props.name}
         </span>
       </div>
     </div>
