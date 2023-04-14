@@ -1,5 +1,4 @@
 import React from 'react';
-
 import classes from "./Details.module.css";
 
 export default function Details(props) {

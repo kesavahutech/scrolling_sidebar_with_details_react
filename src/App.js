@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+import classes from "./App.module.css";
 import CardList from "./Components/CardList/CardList";
 import Details from "./Components/Details/Details";
 
@@ -10,12 +10,12 @@ function App() {
   }
   return (
     <>
-      <header className="header-top">
+      <header className={classes.header_top}>
         <span>Food Items</span>
       </header>
-      <div className="body">
+      <div className={classes.body}>
         <CardList clickHandler={clickHandler} />
-        <div className="detail-div">{detail && <Details detail={detail}/>}</div>
+        <div className={classes.detail_div}>{detail && <Details detail={detail}/>}</div>
       </div>
     </>
   );

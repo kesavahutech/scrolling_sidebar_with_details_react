@@ -4,7 +4,7 @@
     flex-direction: row;
 }
 
-.detail-div {
+.detail_div {
     display: flex;
     position: fixed;
     top: 4rem;
@@ -15,7 +15,7 @@
     width: 40rem;
 } 
 
-.header-top {
+.header_top {
     position: sticky;
     z-index: 1;
     top: 0px;
@@ -24,7 +24,7 @@
     height: 3rem;
 }
 
-.header-top span {
+.header_top span {
     font-size:xx-large;
     margin-left: 8rem;
 }
